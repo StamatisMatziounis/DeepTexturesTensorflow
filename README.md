@@ -26,3 +26,8 @@ prerequisites. I.e. the createLoss() function creates a lexicon that contains
 the linked layer-index values of the best image for that specific layer.
 Another example is the calculatedWeightedScore() function that
 implements the Algorithm required for the ruinsWeightAVG() function.
+
+  To create a new method, the weighted average 2 implementation **(multiInputtextures.py)** can be used as a
+template, by using its weights to eliminate or amplify the results of a feature set. This
+is not optimal, because when removing clean images, the possibility of unused images
+is present, and prevents possible performance gains.
